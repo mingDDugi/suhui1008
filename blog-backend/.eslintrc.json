@@ -1,0 +1,22 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+        //ESLint에서 import/export 구문을 사용해도
+        // 오류로 간주하지 않도록 "sourceType": "module" 넣음
+    },
+    "rules": {
+        "no-unused-vars": "warn",
+        "no-console": "off"
+    }
+}
